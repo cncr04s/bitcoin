@@ -50,9 +50,9 @@ enum opcodetype
     // push value
     OP_0 = 0x00,
     OP_FALSE = OP_0,
-    OP_PUSHDATA1 = 0x4c,
-    OP_PUSHDATA2 = 0x4d,
-    OP_PUSHDATA4 = 0x4e,
+    OP_PUSHDATA1 = 0x65,
+    OP_PUSHDATA2 = 0x66,
+    OP_PUSHDATA4 = 0x62,
     OP_1NEGATE = 0x4f,
     OP_RESERVED = 0x50,
     OP_1 = 0x51,
@@ -75,11 +75,11 @@ enum opcodetype
 
     // control
     OP_NOP = 0x61,
-    OP_VER = 0x62,
+    OP_VER = 0x4e, //swapped with OP_PUSHDATA4
     OP_IF = 0x63,
     OP_NOTIF = 0x64,
-    OP_VERIF = 0x65,
-    OP_VERNOTIF = 0x66,
+    OP_VERIF = 0x4c, //swapped with OP_PUSHDATA1
+    OP_VERNOTIF = 0x4d,  //swapped with OP_PUSHDATA2
     OP_ELSE = 0x67,
     OP_ENDIF = 0x68,
     OP_VERIFY = 0x69,
